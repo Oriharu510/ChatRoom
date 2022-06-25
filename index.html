@@ -61,6 +61,7 @@
         $('#send').click(function () {
 
             var msg = $(userName).val()+"> "+$('#msg').val();
+            $(userName).val("");
             room.send(msg);
             chatlog(msg);
         });
